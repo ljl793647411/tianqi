@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html, body {
+            font-size: 100px;
+        }
+
+        @media screen and (min-width: 375px) {
+            html {
+                font-size: 50px;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        .top {
+            width: 100%;
+            height: 7rem;
+            background-image: url("img/2.jpg");
+            background-size: 100% 7rem;
+            background-repeat: no-repeat;
+            padding: .3rem 0;
+            position: relative;
+        }
+
+        .top-box {
+            width: 2.5rem;
+            height: 2.5rem;
+            position: absolute;
+            top: .3rem;
+            left: .4rem;
+        }
+
+        .top-box-1, .top-box-3 {
+            width: 100%;
+            height: .4rem;
+            font-size: 18px;
+            color: #fff;
+            line-height: .4rem
+
+        }
+
+        .ts-1 {
+            line-height: .4rem;
+            text-align: center;
+        }
+
+        .ts-2 {
+            line-height: .4rem;
+            text-align: center;
+        }
+
+        .top-box-2 {
+            width: 100%;
+            height: 1.7rem;
+            font-size: 80px;
+            color: #fff;
+            text-align: center;
+            line-height: 1.7rem;
+        }
+
+        .bottom-box {
+            width: 100%;
+            height: 1.3rem;
+            display: flex;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        .bottom-box div {
+            width: 33.33333%;
+            height: 100%;
+            border-right: 1px solid #fff
+        }
+
+        .bottom-box div:nth-child(3) {
+            border: none;
+        }
+
+        .bb-top {
+            width: 100%;
+            height: .3rem;
+            text-align: center;
+            font-size: 16px;
+            color: #fff;
+        }
+
+        .bb-bottom {
+            width: 100%;
+            height: 1rem;
+            text-align: center;
+            line-height: 1rem;
+            font-size: 24px;
+            color: #fff;
+        }
+
+        .bottom {
+            width: 100%;
+            height: calc(100% - 8rem);
+            padding: 0 .4rem;
+
+        }
+
+        .bottom ul {
+            width: 100%;
+            height: 1.4rem;
+            border-bottom: 1px solid #cccccc;
+            display: flex;
+            justify-content: space-between;
+            font-size: 18px;
+            color: #000;
+            line-height: 1.4rem;
+        }
+
+        .tqtu img {
+            width: .5rem;
+            height: .5rem;
+        }
+
+        .yubao {
+            width: 100%;
+            font-size: 18px;
+            color: #000;
+            padding: .3rem 0;
+            text-align: center;
+        }
+
+        .foot {
+            width: 100%;
+            height: 1rem;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            padding: .2rem .4rem;
+        }
+
+        .f-lie {
+            width: .6rem;
+            height: .6rem;
+            background-image: url("img/liebiao.png");
+            background-repeat: no-repeat;
+            background-size: .6rem .6rem;
+            float: left;
+            font-size: 20px;
+        }
+
+        .shezhi {
+            width: .6rem;
+            height: .6rem;
+            float: right;
+            background-image: url("img/tianjia.png");
+            background-repeat: no-repeat;
+            background-size: .6rem .6rem;
+        }
+
+        .sheng, .shi, .xian {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 0;
+            height: 0;
+            background: rgba(0, 0, 0, 0.42);
+            overflow: scroll;
+            font-size: 20px;
+            color: #fff;
+            text-align: center;
+            line-height: 1rem;
+            font-family: "苹方 中等";
+        }
+
+        .sheng, .shi, .xian div {
+            border-bottom: 1px solid #ccc;
+        }
+
+        .shi {
+            width: 33%;
+            height: calc(100% - 1rem);
+            right: 33%;
+            display: none;
+        }
+
+        .xian {
+            width: 33%;
+            height: calc(100% - 1rem);
+            right: 66%;
+            display: none;
+        }
+
+        .active {
+            background: #000;
+        }
+        .neirong{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top:0;
+            left:100%;
+            background: #fff;
+        }
+    </style>
+</head>
+<body>
+<div class="top">
+    <div class="top-box">
+        <div class="top-box-1"></div>
+        <div class="top-box-2"></div>
+        <div class="top-box-3">
+            <span class="ts-1"></span>&nbsp;|
+            <span class="ts-2"></span>
+        </div>
+    </div>
+    <div class="bottom-box">
+        <div class="bottom-box1">
+            <p class="bb-top">
+
+            </p>
+            <p class="bb-bottom">
+
+            </p>
+        </div>
+        <div class="bottom-box2">
+            <p class="bb-top">
+
+            </p>
+            <p class="bb-bottom">
+
+            </p>
+        </div>
+        <div class="bottom-box3">
+            <p class="bb-top">
+
+            </p>
+            <p class="bb-bottom">
+
+            </p>
+        </div>
+    </div>
+</div>
+<div class="bottom">
+    <ul><span class="date">
+    </span>
+        <span class="tinaqi">
+            <span class="tqtu">
+                <img alt="">
+            </span>
+            <span class="tq">
+
+            </span> &nbsp;|&nbsp;
+            <span class="kongqi">
+
+            </span>
+        </span>
+        <span class="wendu">
+            <span class="wd-min">
+
+            </span>/
+            <span class="wd-max">
+
+            </span>
+        </span>
+    </ul>
+    <ul><span class="date">
+        明天
+    </span>
+        <span class="tinaqi">
+            <span class="tqtu">
+                <img alt="">
+
+            </span>
+            <span class="tq">
+
+            </span> &nbsp;|&nbsp;
+            <span class="kongqi">
+
+            </span>
+        </span>
+        <span class="wendu">
+            <span class="wd-min">
+
+            </span>/
+            <span class="wd-max">
+
+            </span>
+        </span>
+    </ul>
+    <ul><span class="date">
+        周二
+    </span>
+        <span class="tinaqi">
+            <span class="tqtu">
+                <img alt="">
+
+            </span>
+            <span class="tq">
+
+            </span> &nbsp;|&nbsp;
+            <span class="kongqi">
+
+            </span>
+        </span>
+        <span class="wendu">
+            <span class="wd-min">
+
+            </span>/
+            <span class="wd-max">
+
+            </span>
+        </span>
+    </ul>
+    <div class="yubao">
+        5天趋势预报
+    </div>
+</div>
+<div class="foot">
+    <div class="f-lie">
+
+    </div>
+    <div class="shezhi">
+    </div>
+</div>
+<div class="sheng">
+</div>
+<div class="shi">
+</div>
+<div class="xian">
+</div>
+<div class="neirong">
+    <h2>一周天气趋势</h2>
+
+</div>
+</body>
+<script src="jquery.js"></script>
+<script>
+    var url = "http://api.jisuapi.com/weather/query?appkey=ec7b65579d1c85ce&city=太原";
+    $.ajax({
+        url: url,
+        dataType: "jsonp",
+        success: function (r) {
+            $(".top-box-1").html(r.result.city);
+            $(".top-box-2").html(r.result.temp + "°");
+            $(".ts-1").html(r.result.weather);
+            $(".ts-2").html(r.result.aqi.quality);
+            $(".bottom-box1 .bb-top").html(r.result.winddirect);
+            $(".bottom-box1 .bb-bottom").html(r.result.windpower);
+            $(".bottom-box2 .bb-top").html("相对湿度");
+            $(".bottom-box2 .bb-bottom").html(r.result.humidity);
+            $(".bottom-box3 .bb-top").html("体感温度");
+            $(".bottom-box3 .bb-bottom").html(r.result.windpower);
+            $.each($(".tqtu img"), function (index, ele) {
+                var img = r.result.daily[index].day.img;
+                $(ele).attr("src", "img/img/" + img + ".png")
+            });
+            $.each($(".tq"), function (index, ele) {
+                $(ele).html(r.result.daily[index].day.weather);
+            });
+            $.each($(".wd-max"), function (index, ele) {
+                $(ele).html(r.result.daily[index].day.temphigh + "℃")
+            });
+            $.each($(".wd-min"), function (index, ele) {
+                $(ele).html(r.result.daily[index].night.templow + "℃")
+            })
+            $.each($(".date"), function (index, ele) {
+                $(ele).html(r.result.daily[index].week)
+            })
+            $.each($(".kongqi"), function (index, ele) {
+                $(ele).html(r.result.aqi.quality)
+            })
+
+        }
+    })
+    $.ajax({
+        url: "http://api.jisuapi.com/area/province?appkey=ec7b65579d1c85ce",
+        dataType: "jsonp",
+        success: function (r) {
+            var data = r.result;
+            var sheng = $(".sheng");
+            var str = "";
+            $.each(data, function (index, ele) {
+                str += "<div id=" + ele.id + ">" + ele.name + "</div>";
+            })
+            $(sheng).html(str)
+        }
+    })
+    $(".shezhi").click(function () {
+        $(".sheng").animate({
+            "width": "33%",
+            "height": "100%"
+        })
+    })
+
+    $(".sheng").click(function (e) {
+        var target = e.target;
+        var id = target.id;
+        var shi = $(".shi")
+        $(shi).fadeIn();
+        $(".sheng div").removeClass("active");
+        $(target).addClass("active");
+        $.ajax({
+            url: "http://api.jisuapi.com/area/city?parentid=" + id + "&appkey=ec7b65579d1c85ce",
+            dataType: "jsonp",
+            success: function (r) {
+                var data = r.result;
+                var str = "";
+                $.each($(data), function (index, ele) {
+                    str += "<div id=" + ele.id + ">" + ele.name + "</div>"
+                })
+                $(shi).html(str);
+            }
+        })
+        return target.name;
+    })
+    $(".shi").click(function (e) {
+        var target = e.target;
+        var id = target.id;
+        var xian = $(".xian")
+        $(xian).fadeIn();
+        $(".shi div").removeClass("active");
+        $(target).addClass("active");
+        $.ajax({
+            url: "http://api.jisuapi.com/area/town?parentid=" + id + "&appkey=ec7b65579d1c85ce",
+            dataType: "jsonp",
+            success: function (r) {
+                var data = r.result;
+                var str = "";
+                $.each($(data), function (index, ele) {
+                    str += "<div id=" + ele.id + ">" + ele.name + "</div>"
+                })
+                $(xian).html(str);
+            }
+        })
+    })
+
+    $(".xian").click(function(e){
+        var target = e.target;
+        chengshi = target.innerHTML;
+        if(chengshi){
+            $(".sheng").css({
+                "width":"0%",
+                "hright":"0%",
+            })
+            $(".shi,.xian").css("display","none");
+        }
+        console.log(chengshi)
+
+    })
+        $(".yubao").click(function(){
+            $(".neirong").animate({
+                "left":0
+            })
+        })
+
+</script>
+</html>
